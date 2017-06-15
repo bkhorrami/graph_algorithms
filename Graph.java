@@ -149,6 +149,11 @@ public class Graph {
 
 
     public static void main(String[] args) {
+        String wg = "./tiny.txt";
+        MSTPrim kg = new MSTPrim(wg);
+        kg.findPrimMST();
+        kg.printMST();
+        
 //        //String fileName = "/Users/babak_khorrami/Downloads/facebook/107.edges";
 //        //String fileName = "/Users/babak_khorrami/Documents/tmp/dgt.txt";
 //        String fileName = "/Users/babak_khorrami/Documents/tmp/g1.txt";
@@ -267,12 +272,7 @@ public class Graph {
 //
 //    }
 
-        System.out.println("--------------------------------------");
 
-        String wg = "/Users/babak_khorrami/Documents/tmp/tiny.txt";
-        MSTPrim kg = new MSTPrim(wg);
-        kg.findPrimMST();
-        kg.printMST();
 //        EdgeWeightedGraph eg = new EdgeWeightedGraph(wg);
 //        eg.printEdge();
     }
